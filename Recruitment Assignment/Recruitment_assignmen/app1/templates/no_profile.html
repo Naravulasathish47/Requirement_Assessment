@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+<p>There is no profile available for User {{ request.user.username }}</p>
+<a href="{% url 'index' %}" class="btn btn-success">Create One!</a>
+{% endblock %}
